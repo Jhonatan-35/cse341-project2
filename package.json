@@ -16,5 +16,10 @@
   "main": "server.js",
   "scripts": {
     "test": "https://github.com/Jhonatan-35/cse341-project2.git"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0"
   }
 }
