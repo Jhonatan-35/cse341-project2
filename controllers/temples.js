@@ -67,7 +67,7 @@ const deleteTemple = async (req, res) => {
     res.status(400).json('Must use a valid Temple id to delete a Temple.');
   }
   const userId = new ObjectId(req.params.id);
-  const response = await mongodb.getDatabase().db().collection('temples').remove({ _id: userId }, true);
+  const response = await mongodb.getDatabase().db().collection('temples').deleteOne({ _id: userId });
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(204).send();
