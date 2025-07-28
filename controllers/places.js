@@ -26,7 +26,7 @@ const getSingle = async (req, res) => {
     });
 };
  const createPlace = async (req ,res) => {
-  //#swagger.tags ['temples']
+  //#swagger.tags ['Places']
     const user = {
        
        namePlace: req.body.namePlace,
@@ -45,7 +45,7 @@ const getSingle = async (req, res) => {
 };
 
 const updatePlace = async (req ,res) => {
-  //#swagger.tags ['temples']
+  //#swagger.tags ['places']
     const userId = new ObjectId(req.params.id);
     const user = {
        namePlace: req.body.namePlace,
