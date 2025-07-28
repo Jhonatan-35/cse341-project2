@@ -36,7 +36,7 @@ const getSingle = async (req, res) => {
     };
     const response = await mongodb.getDatabase().db().collection('temples').insertOne(user);
     if (response.acknowledged) {
-        res.status(201).json(response);
+        res.status(400).json(response);
     }
     else {
         res.status(500).json(response.console.error || 'Some error occurred while creating the temple');
@@ -55,7 +55,7 @@ const updateTemple = async (req ,res) => {
     };
     const response = await mongodb.getDatabase().db().collection('temples').replaceOne({_id: userId} ,user);
     if (response.modifiedCount > 0) {
-        res.status(204).send();
+        res.status(400).send();
     }
     else {
         res.status(500).json(response.console.error || 'Some error occurred while updating the temple');

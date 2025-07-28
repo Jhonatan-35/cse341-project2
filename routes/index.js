@@ -8,5 +8,6 @@ router.get('/',(req, res)=> {
 });
 
 router.use('/temples',require('./temples'));
+router.use('/places',require('./places'));
 
 module.exports = router 
