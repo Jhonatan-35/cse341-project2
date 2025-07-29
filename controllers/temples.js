@@ -30,6 +30,7 @@ const getSingle = async (req, res) => {
     const user = {
        templeName: req.body.templeName,
        country: req.body.country,
+       email: req.body.email,
        dateDedication: req.body.dateDedication,
        phone: req.body.phone
        
@@ -49,6 +50,7 @@ const updateTemple = async (req ,res) => {
     const user = {
        templeName: req.body.templeName,
        country: req.body.country,
+       email: req.body.email,
        dateDedication: req.body.dateDedication,
        phone: req.body.phone,
        

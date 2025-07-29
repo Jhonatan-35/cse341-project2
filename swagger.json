@@ -62,6 +62,9 @@
                 "country": {
                   "example": "any"
                 },
+                "email": {
+                  "example": "any"
+                },
                 "dateDedication": {
                   "example": "any"
                 },
@@ -75,6 +78,9 @@
         "responses": {
           "400": {
             "description": "Bad Request"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
@@ -127,6 +133,9 @@
                 "country": {
                   "example": "any"
                 },
+                "email": {
+                  "example": "any"
+                },
                 "dateDedication": {
                   "example": "any"
                 },
@@ -140,6 +149,9 @@
         "responses": {
           "400": {
             "description": "Bad Request"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
@@ -200,6 +212,9 @@
                 "altitude": {
                   "example": "any"
                 },
+                "email": {
+                  "example": "any"
+                },
                 "phone": {
                   "example": "any"
                 },
@@ -213,6 +228,9 @@
         "responses": {
           "400": {
             "description": "Bad Request"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
@@ -265,6 +283,9 @@
                 "altitude": {
                   "example": "any"
                 },
+                "email": {
+                  "example": "any"
+                },
                 "phone": {
                   "example": "any"
                 },
@@ -278,6 +299,9 @@
         "responses": {
           "400": {
             "description": "Bad Request"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"

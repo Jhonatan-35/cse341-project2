@@ -13,7 +13,7 @@ const getAll = async  (req, res) => {
 };
 const getSingle = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid temple id to find a place.');
+    res.status(400).json('Must use a valid place id to find a place.');
   }
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDatabase().db().collection('places').find({ _id: userId });
@@ -28,9 +28,9 @@ const getSingle = async (req, res) => {
  const createPlace = async (req ,res) => {
   //#swagger.tags ['Places']
     const user = {
-       
        namePlace: req.body.namePlace,
        altitude: req.body.altitude,
+       email: req.body.email,
        phone: req.body.phone,
        sport: req.body.sport
        
@@ -50,6 +50,7 @@ const updatePlace = async (req ,res) => {
     const user = {
        namePlace: req.body.namePlace,
        altitude: req.body.altitude,
+       email: req.body.email,
        phone: req.body.phone,
        sport: req.body.sport,
        
